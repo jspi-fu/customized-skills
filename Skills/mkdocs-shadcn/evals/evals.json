@@ -1,0 +1,17 @@
+{
+  "skill_name": "mkdocs-shadcn",
+  "evals": [
+    {
+      "id": 1,
+      "name": "format-headers-and-dividers",
+      "prompt": "格式化以下 Markdown 内容：包含多个 H2 和 H3，确保 H2 后有 ---，H3 前有 ---（第一个除外），并清理其他多余的分隔符。内容如下：\n\n## 第一章\n这是内容。\n### 1.1 节\n内容1.1。\n--- \n### 1.2 节\n内容1.2。\n\n## 第二章\n### 2.1 节\n内容2.1。",
+      "expected_output": "## 第一章\n---\n这是内容。\n\n### 1.1 节\n内容1.1。\n\n---\n\n### 1.2 节\n内容1.2。\n\n## 第二章\n---\n### 2.1 节\n内容2.1。"
+    },
+    {
+      "id": 2,
+      "name": "center-images",
+      "prompt": "格式化以下包含图片的 Markdown：确保图片居中且无标题。内容如下：\n\n![一个漂亮的图片](https://example.com/img.png)\n这里有一些文字。\n![GIF 动画](https://example.com/anim.gif)",
+      "expected_output": "<p align=\"center\">![](https://example.com/img.png)</p>\n这里有一些文字。\n<p align=\"center\">![](https://example.com/anim.gif)</p>"
+    }
+  ]
+}

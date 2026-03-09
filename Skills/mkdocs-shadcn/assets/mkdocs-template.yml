@@ -1,0 +1,40 @@
+site_name: "项目名称"
+site_url: https://your-site.github.io/
+repo_url: https://github.com/username/repo.git
+repo_name: username/repo
+
+theme:
+  name: shadcn
+  show_title: true
+  show_stargazers: true
+  pygments_style:
+    light: shadcn-light
+    dark: github-dark
+  icon: assets/logo.svg
+  topbar_sections: false
+  show_datetime: false
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_root_heading: true
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - fenced_code
+  - footnotes
+  - pymdownx.blocks.details
+  - pymdownx.blocks.tab
+  - pymdownx.progressbar
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+
+nav:
+  - 首页: index.md
+  # 在此处添加更多导航项

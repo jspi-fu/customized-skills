@@ -1,0 +1,92 @@
+{
+  "skill_name": "ideological-self-report",
+  "evals": [
+    {
+      "id": 1,
+      "name": "basic-report-generation",
+      "prompt": "帮我写一篇思想汇报，思想政治方面的核心内容是：本季度我认真学习了党的二十大精神，深刻领会了习近平新时代中国特色社会主义思想，关注了全国两会的召开，深感作为新时代青年的责任重大。",
+      "expected_output": "生成一份完整的思想汇报，包含标题、称谓、思想政治方面（600-700字）、学习方面（250-350字）、工作方面（250-350字）、生活方面（100-150字）、缺点与不足（150-200字）、结尾和落款。总字数应在1700-1900字之间。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "has_correct_title",
+          "description": "文档标题应为'思想汇报'"
+        },
+        {
+          "name": "has_correct_salutation",
+          "description": "称谓应为'敬爱的党组织：'"
+        },
+        {
+          "name": "word_count_in_range",
+          "description": "总字数应在1700-1900字之间"
+        },
+        {
+          "name": "no_prohibited_phrases",
+          "description": "不包含禁用短语如'自从被评为'、'以党员的标准要求自己'、'党性修养'等"
+        },
+        {
+          "name": "no_deep_adverbs",
+          "description": "不包含'深入'、'深刻'等深度副词"
+        },
+        {
+          "name": "has_ideological_section",
+          "description": "包含思想政治方面内容"
+        },
+        {
+          "name": "has_study_section",
+          "description": "包含学习方面内容"
+        },
+        {
+          "name": "has_work_section",
+          "description": "包含工作方面内容"
+        },
+        {
+          "name": "has_self_criticism",
+          "description": "包含缺点与不足部分"
+        },
+        {
+          "name": "has_proper_closing",
+          "description": "包含正确的结尾、此致敬礼和落款格式"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "report-with-exam-content",
+      "prompt": "我需要写一篇本季度的思想汇报。思想政治方面：我学习了习近平总书记关于青年工作的重要论述，观看了建党百年纪录片，对党的历史有了更深的认识。另外，这学期我参加了英语六级考试，希望能将学习成果写入汇报中。",
+      "expected_output": "生成的思想汇报应包含考试相关内容（英语六级），并符合所有格式和合规要求",
+      "files": [],
+      "assertions": [
+        {
+          "name": "includes_exam_content",
+          "description": "学习方面包含英语六级考试相关内容"
+        },
+        {
+          "name": "word_count_in_range",
+          "description": "总字数应在1700-1900字之间"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "report-with-personalization",
+      "prompt": "请帮我写思想汇报。思想政治方面：通过参加学校组织的党课学习，我对党的理论知识有了更系统的认识。另外，我这学期担任了班级学习委员，参与了迎新志愿者活动，学习上通过了计算机二级考试。缺点方面，我觉得自己在时间管理和理论与实践结合上还需要提高。",
+      "expected_output": "生成的汇报应个性化地反映用户提到的具体经历（学习委员、迎新志愿者、计算机二级考试）和具体的缺点（时间管理、理论联系实际）",
+      "files": [],
+      "assertions": [
+        {
+          "name": "personalized_work_section",
+          "description": "工作方面包含学习委员和迎新志愿者的具体内容"
+        },
+        {
+          "name": "personalized_study_section",
+          "description": "学习方面包含计算机二级考试相关内容"
+        },
+        {
+          "name": "acceptable_weakness",
+          "description": "缺点部分使用可接受的主题，不包含'做事不够大胆'等禁用内容"
+        }
+      ]
+    }
+  ]
+}

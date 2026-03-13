@@ -32,6 +32,7 @@
 
 - 🚀 [**edgeone-pages-best-practice**](Skills/edgeone-pages/SKILL.md)：指导 AI 生成符合 [EdgeOne Pages](https://edgeone.ai/zh) 平台规范的代码，避免部署报错。
 - 📝 [**mkdocs-shadcn**](Skills/mkdocs-shadcn/SKILL.md)：mkdocs-shadcn 主题 Markdown 排版与项目编排，包括 YAML 配置、扩展语法（admonition、details、tab、数学公式等）、文本对齐规范等。
+- 📄 [**ideological-self-report**](Skills/ideological-self-report/SKILL.md)：帮助用户撰写符合规范的思想汇报文档，适用于大学生、入党积极分子等需要定期提交思想汇报的场景。
 
 
 ---

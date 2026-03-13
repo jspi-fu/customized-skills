@@ -1,7 +1,9 @@
-# Customized Skills
+<p align="center">
+  <img src="assets/claude-agent-skills.jpg" alt="Skills 架构图">
+</p>
 
 <p align="center">
-  <img src="assets/claude-agent-skills.jpg" alt="Skills 架构图" width="80%">
+  <img style="height: 50px;" src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=400&duration=3500&pause=2000&color=E78BE7&center=true&vCenter=true&random=false&width=200&lines=Customized+Skills+!" alt="Hello-vibe-typing-svg" />
 </p>
 
 <p align="center">

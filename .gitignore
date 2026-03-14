@@ -5,6 +5,9 @@ desktop.ini
 
 # 编辑器文件
 .vscode/
+.agent/
+.agents/
+.trae/
 .idea/
 *.swp
 *.swo
@@ -43,3 +46,4 @@ yarn.lock
 .env
 .env.local
 .env.*.local
+skills-lock.json

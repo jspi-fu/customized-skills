@@ -1,14 +1,12 @@
 # mkdocs-shadcn 排版示例
 
 ## 示例 1：书籍序言页面
-
-```markdown
 ---
+```markdown
 title: 序言
 summary: 本书序言，阐述AI编程教程的写作初衷与背景
 new: false
 show_datetime: false
----
 
 > 送给即将与AI同行的人们
 
@@ -16,28 +14,24 @@ show_datetime: false
 
 ## 你能从这本书中获得什么
 ---
-
 - **理解AI编程的概念并快速上手**
 - **亲手为自己定制一份实用工具**
 - **学习AI编程的高阶技巧**
 
 ## 赠语
 ---
-
 编程的本质从未改变...
 
 <p align="center"><strong>亲爱的同志们，不要成为我，要超越我。</strong></p>
 ```
 
 ## 示例 2：技术教程页面
-
-```markdown
 ---
+```markdown
 title: 快速上手
 summary: 5分钟快速上手AI编程，完成环境配置与第一个程序
 new: false
 show_datetime: false
----
 
 # 快速上手
 
@@ -45,7 +39,6 @@ show_datetime: false
 
 ## 环境准备
 ---
-
 ### 安装依赖
 
 /// tab | pip
@@ -66,6 +59,8 @@ poetry add openai
 ```
 ///
 
+---
+
 ### 配置API密钥
 
 !!! warning "安全提示"
@@ -80,7 +75,6 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 ## 第一个程序
 ---
-
 !!! tip "提示"
     保持提示词简洁明了，描述你想要的结果即可。
 
@@ -96,14 +90,15 @@ print(response.choices[0].message.content)
 
 ## 常见问题
 ---
-
 /// details | API密钥无效怎么办？
+
 1. 检查密钥是否正确复制
 2. 确认环境变量已设置
 3. 检查账户余额是否充足
 ///
 
 /// details | 如何降低API成本？
+
 - 使用更便宜的模型（如gpt-3.5-turbo）
 - 限制输出token数量
 - 使用缓存避免重复请求
@@ -111,20 +106,17 @@ print(response.choices[0].message.content)
 ```
 
 ## 示例 3：API文档页面
-
-```markdown
 ---
+```markdown
 title: API参考
 summary: 完整的API接口文档，包含认证、接口列表与错误码说明
 new: false
 show_datetime: false
----
 
 # API参考
 
 ## 认证
 ---
-
 所有API请求需要在Header中携带认证信息：
 
 ```
@@ -136,7 +128,6 @@ Authorization: Bearer YOUR_API_KEY
 
 ## 接口列表
 ---
-
 ### 获取用户信息
 
 ```http
@@ -153,6 +144,8 @@ GET /api/v1/user
 }
 ```
 
+---
+
 ### 更新用户信息
 
 ```http
@@ -166,7 +159,6 @@ Content-Type: application/json
 
 ## 错误码
 ---
-
 | 错误码 | 说明 | 处理建议 |
 |--------|------|----------|
 | 400 | 请求参数错误 | 检查请求参数格式 |
@@ -176,14 +168,12 @@ Content-Type: application/json
 ```
 
 ## 示例 4：多步骤教程
-
-```markdown
 ---
+```markdown
 title: 项目实战
 summary: 从零开始构建一个完整的待办事项应用，学习AI编程实战技巧
 new: false
 show_datetime: false
----
 
 # 项目实战
 
@@ -191,7 +181,6 @@ show_datetime: false
 
 ## 第一阶段：需求分析
 ---
-
 [==25%]
 
 ### 目标
@@ -203,15 +192,19 @@ show_datetime: false
 - [ ] 设置提醒
 - [ ] 数据同步
 
+---
+
 ### 技术选型
 
 /// details | 前端技术栈
+
 - React 18
 - Tailwind CSS
 - shadcn/ui组件库
 ///
 
 /// details | 后端技术栈
+
 - Python FastAPI
 - PostgreSQL
 - Redis缓存
@@ -219,7 +212,6 @@ show_datetime: false
 
 ## 第二阶段：项目搭建
 ---
-
 [==50%]
 
 !!! tip "最佳实践"
@@ -236,14 +228,12 @@ venv\Scripts\activate     # Windows
 
 ## 第三阶段：核心功能
 ---
-
 [==75%]
 
 待补充...
 
 ## 第四阶段：部署上线
 ---
-
 [==100%]
 
 !!! success "完成"
@@ -251,21 +241,18 @@ venv\Scripts\activate     # Windows
 ```
 
 ## 示例 5：数学公式展示
-
-```markdown
 ---
+```markdown
 title: 算法原理
 summary: 核心算法的数学原理
 description: 详解算法背后的数学公式
 keywords: 算法, 数学, 原理
 order: 3
----
 
 # 算法原理
 
 ## 线性回归
 ---
-
 线性回归模型的目标是最小化损失函数：
 
 $$
@@ -273,13 +260,13 @@ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2
 $$
 
 其中：
+
 - $m$ 是样本数量
 - $h_\theta(x)$ 是假设函数
 - $y$ 是真实值
 
 ## 梯度下降
 ---
-
 参数更新公式：
 
 $$
@@ -296,21 +283,18 @@ $$
 ```
 
 ## 示例 6：对比表格
-
-```markdown
 ---
+```markdown
 title: 方案对比
 summary: 不同方案的优缺点对比
 description: 详细对比各方案的优劣
 keywords: 对比, 方案, 选择
 order: 4
----
 
 # 方案对比
 
 ## 技术方案对比
 ---
-
 | 方案 | 优点 | 缺点 | 适用场景 |
 |:-----|:-----|:-----|:---------|
 | 方案A | 简单易用 | 功能有限 | 小型项目 |
@@ -319,7 +303,6 @@ order: 4
 
 ## 成本对比
 ---
-
 !!! info "说明"
     以下成本估算基于月均使用量。
 
@@ -331,17 +314,16 @@ order: 4
 
 ## 推荐方案
 ---
-
 !!! tip "建议"
     对于初创团队，建议选择**方案A**快速验证想法，后期再迁移到方案B。
 ```
 
 ## 示例 7：常见误区（使用 Details 折叠）
-
+---
 ```markdown
+
 ## 常见误区
 ---
-
 /// details | 误区一：把用户群体当用户个体
 "年轻人"不是用户，"25岁在上海工作的产品经理小王"才是用户。
 
@@ -364,7 +346,7 @@ order: 4
 **效果说明**：常见误区类内容适合用 `/// details` 逐个折叠，读者可以根据兴趣展开查看，不会让主要内容显得冗长。
 
 ## 排版决策参考
-
+---
 | 场景 | 推荐语法 | 示例 |
 |------|----------|------|
 | 重要语句/赠语 | 居中加粗 | `<p align="center"><strong>文字</strong></p>` |
